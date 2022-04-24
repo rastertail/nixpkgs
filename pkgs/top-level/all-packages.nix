@@ -23180,6 +23180,14 @@ with pkgs;
     overrides = (config.rPackageOverrides or (_: {})) pkgs;
   });
 
+  ### DEVELOPMENT / AMIGA
+
+  ndk_32 = callPackage ../development/misc/amiga/ndk_32.nix { };
+
+  sfdc = callPackage ../development/misc/amiga/sfdc.nix { };
+
+  vlink = callPackage ../development/misc/amiga/vlink.nix { };
+
   ### SERVERS
 
   _389-ds-base = callPackage ../servers/ldap/389 { };

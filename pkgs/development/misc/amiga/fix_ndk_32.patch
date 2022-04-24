@@ -1,0 +1,12 @@
+diff -ruN SFD/graphics_lib.sfd SFD-patched/graphics_lib.sfd
+--- SFD/graphics_lib.sfd	2021-12-20 11:10:14.685913731 -0600
++++ SFD-patched/graphics_lib.sfd	2021-12-20 11:03:53.955774611 -0600
+@@ -23,7 +23,7 @@
+ VOID BltTemplate( CONST PLANEPTR source, WORD xSrc, WORD srcMod,
+ 	struct RastPort *destRP, WORD xDest, WORD yDest, WORD xSize,
+ 	WORD ySize )
+-	(A0,D0,D1,A1,D2,D3,D4,D5 )
++	(A0,D0,D1,A1,D2,D3,D4,D5)
+ *------ Text routines ------
+ VOID ClearEOL( struct RastPort *rp ) (A1)
+ VOID ClearScreen( struct RastPort *rp ) (A1)

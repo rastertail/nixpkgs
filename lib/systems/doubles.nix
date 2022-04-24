@@ -6,6 +6,9 @@ let
   inherit (lib.attrsets) matchAttrs;
 
   all = [
+    # Amiga
+    "m68k-amiga"
+
     # Cygwin
     "i686-cygwin" "x86_64-cygwin"
 
@@ -108,6 +111,7 @@ in {
   redox         = filterDoubles predicates.isRedox;
   windows       = filterDoubles predicates.isWindows;
   genode        = filterDoubles predicates.isGenode;
+  amiga         = filterDoubles predicates.isAmiga;
 
   embedded      = filterDoubles predicates.isNone;
 

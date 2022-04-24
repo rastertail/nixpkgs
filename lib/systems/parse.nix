@@ -301,6 +301,7 @@ rec {
     windows  = { execFormat = pe;      families = { }; };
     ghcjs    = { execFormat = unknown; families = { }; };
     genode   = { execFormat = elf;     families = { }; };
+    amiga    = { execFormat = elf;     families = { }; };
     mmixware = { execFormat = unknown; families = { }; };
   } // { # aliases
     # 'darwin' is the kernel for all of them. We choose macOS by default.
