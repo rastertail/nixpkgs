@@ -23186,6 +23186,8 @@ with pkgs;
 
   sfdc = callPackage ../development/misc/amiga/sfdc.nix { };
 
+  vasm = callPackage ../development/misc/amiga/vasm.nix { };
+
   vlink = callPackage ../development/misc/amiga/vlink.nix { };
 
   ### SERVERS
